@@ -33,28 +33,28 @@ CI-CD/
 └── index.html              # Web content
 ```
 
-### 🚀 Step-by-Step Setup
-##  Clone your GitHub repo
+# 🚀 Step-by-Step Setup
+###  Clone your GitHub repo
 ```bash
 git clone https://github.com/shakti468/CI-CD.git
 ```
 
-# 📸 Screenshot of terminal cloning the repo
+### 📸 Screenshot of terminal cloning the repo
 
 ![image](https://github.com/user-attachments/assets/a2b10743-6f97-475f-b2df-72801698d707)
 
 
 ----
 
-## Install Nginx
+### Install Nginx
 ```bash
 sudo apt update
 sudo apt install nginx
 sudo systemctl start nginx
 ```
 
-## Create a simple HTML project and push it to a GitHub repository. 
-📸 Screenshot
+### Create a simple HTML project and push it to a GitHub repository.
+### 📸 Screenshot
 
 
 ![image](https://github.com/user-attachments/assets/743894d3-b1f1-4e84-a86f-6bf2ebb64511)
@@ -71,11 +71,11 @@ sudo apt install python3 python3-pip
 pip3 install requests
  ```
 
-### Python Script: check_github.py
+## Python Script: check_github.py
 ```bash
 nano check_github.py
  ```
-## Code
+### Code
 ```bash
 # check_github.py
 import requests, os, sys
@@ -121,26 +121,26 @@ if __name__ == "__main__":
 
  ```
 
-## Grant Execute Permission to Python Script (chmod +x)
+### Grant Execute Permission to Python Script (chmod +x)
 ```bash
 chmod +x check_github.py
 ```
 
-📸 Screenshot of script output: "New changes detected" or "No new changes"
+### 📸 Screenshot of script output: "New changes detected" or "No new changes"
 
 ![image](https://github.com/user-attachments/assets/037fadc5-a83d-4e4c-83aa-f237709b5057)
 
 
 ---
 
-### Bash Script: update_website.sh
+## Bash Script: update_website.sh
 
 ```bash
 nano update_website.sh
 
 ```
 
-## Code
+### Code
 ```bash
 #!/bin/bash
 
@@ -156,26 +156,26 @@ echo "Website updated successfully"
 
 ```
 
-## Grant Execute Permission to Bash Script
+### Grant Execute Permission to Bash Script
 ```bash
 chmod +x update_website.sh
 
 
 ```
 
-📸 Screenshot showing "Website updated successfully"
+### 📸 Screenshot showing "Website updated successfully"
 
 ![image](https://github.com/user-attachments/assets/9d17d879-ec45-4525-94e8-589479968dc2)
 
 ---
 
-### Wrapper Script: ci_cd_wrapper.sh
+## Wrapper Script: ci_cd_wrapper.sh
 
 ```bash
 nano ci_cd_wrapper.sh
 
 ```
-## Code 
+### Code 
 ```bash
 #!/bin/bash
 python3 /home/shakt/b10/CI-CD/check_github.py
@@ -186,40 +186,40 @@ fi
 
 ```
 
-## Grant Execute Permission to Wrapper Script
+### Grant Execute Permission to Wrapper Script
 ```bash
 chmod +x ci_cd_wrapper.sh
 
 ```
 
-📸 Screenshot of wrapper execution
+### 📸 Screenshot of wrapper execution
 
 ![image](https://github.com/user-attachments/assets/615b8246-9cda-42e3-8fc9-72872c4f63b9)
 
 ---
 
-### Cron Job 
+## Cron Job 
 
-## Edit crontab:
+### Edit crontab:
 ```bash
 crontab -e
 
 ```
 
-## Add:
+### Add:
 ```bash
 */5 * * * * /home/shakt/b10/CI-CD/ci_cd_wrapper.sh >> /home/shakt/b10/CI-CD/ci_cd.log 2>&1
 
 ```
 
-📸 Screenshot of crontab entry
+### 📸 Screenshot of crontab entry
 
 ![image](https://github.com/user-attachments/assets/c1d65f67-8f59-40eb-b9e3-1c0521845e27)
 
 ---
 
 
-### Final Test
+## Final Test
 
 - Push a change to GitHub (e.g., update index.html)
 
@@ -227,7 +227,7 @@ crontab -e
 
 - Check your Nginx page
 
-  📸 Before and after screenshot of browser showing new HTML content
+  ### 📸 Before and after screenshot of browser showing new HTML content
 
   ![Screenshot 2025-05-06 172225](https://github.com/user-attachments/assets/155959f9-c22f-408c-be52-d5d84219f6a1)
 
@@ -238,7 +238,7 @@ crontab -e
 
 ---
 
-## 🎯 Conclusion
+# 🎯 Conclusion
 
 - This setup allows automated deployment of static web content from GitHub to your server.
 
