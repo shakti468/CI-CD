@@ -200,12 +200,23 @@ chmod +x ci_cd_wrapper.sh
 
 ### Cron Job 
 
-## crontab -e
+## Edit crontab:
 ```bash
 crontab -e
 
+```
+
+## Add:
+```bash
+*/5 * * * * /home/shakt/b10/CI-CD/ci_cd_wrapper.sh >> /home/shakt/b10/CI-CD/ci_cd.log 2>&1
 
 ```
+
+📸 Screenshot of crontab entry
+
+![image](https://github.com/user-attachments/assets/c1d65f67-8f59-40eb-b9e3-1c0521845e27)
+
+---
 
 
 
