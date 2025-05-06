@@ -39,7 +39,7 @@ CI-CD/
 git clone https://github.com/shakti468/CI-CD.git
 ```
 
-📸 Screenshot of terminal cloning the repo
+# 📸 Screenshot of terminal cloning the repo
 
 ![image](https://github.com/user-attachments/assets/a2b10743-6f97-475f-b2df-72801698d707)
 
