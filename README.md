@@ -22,9 +22,21 @@ This project demonstrates a basic CI/CD pipeline that automatically pulls change
 - **Nginx** – Web server to serve HTML content
 - **Rsync** – For efficient file transfer
 
----
 
 ## 🌐 Project Structure
-'''
-jijio
-'''
+```bash
+CI-CD/
+├── check_github.py         # Checks for new GitHub commits
+├── update_website.sh       # Pulls latest changes and updates web files
+├── ci_cd_wrapper.sh        # Wraps Python & Bash scripts
+├── last_commit.txt         # Stores latest commit SHA
+└── index.html              # Web content
+```
+
+### 🚀 Step-by-Step Setup
+## 1️⃣ Clone your GitHub repo
+```bash
+git clone https://github.com/shakti468/CI-CD.git
+```
+
+
