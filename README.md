@@ -219,6 +219,33 @@ crontab -e
 ---
 
 
+### Final Test
+
+- Push a change to GitHub (e.g., update index.html)
+
+- Wait 5 minutes or run bash ci_cd_wrapper.sh
+
+- Check your Nginx page
+
+  📸 Before and after screenshot of browser showing new HTML content
+
+  ![Screenshot 2025-05-06 172225](https://github.com/user-attachments/assets/155959f9-c22f-408c-be52-d5d84219f6a1)
+
+
+
+  ![Screenshot 2025-05-06 173045](https://github.com/user-attachments/assets/f0849b4c-a47e-4649-b608-31d3a5d9fd0e)
+
+
+---
+
+## 🎯 Conclusion
+
+- This setup allows automated deployment of static web content from GitHub to your server.
+
+
+
+
+
 
 
   
